@@ -1,0 +1,228 @@
+@use 'variables';
+@use 'mixin';
+
+body{
+    background-color: variables.$White;
+    font-family: variables.$Body-font;
+    color: variables.$Very-Dark-Cyan;
+}
+
+.main-container{
+    width: 375px;
+    margin: 0 auto 25px;
+    @include mixin.desktop-view(1440px);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(43, 43, 43);
+    margin: 25px auto 100px;
+    @include mixin.desktop-view(1300px);
+    &_logo{
+        width: 150px;
+        @include mixin.desktop-view(300px);
+    }
+    &_button{
+        @include mixin.button(variables.$White, variables.$Dark-Grey, variables.$Dark-Grey, 80px, 35px, false);
+        @include mixin.desktop-view(140px, 50px);
+        @include mixin.button-hover(variables.$Grey);
+    }
+}
+
+.nav-menu{
+    justify-content: space-between;
+    text-align: center;
+    margin: 25px auto 100px;
+    margin-top: -100px;
+    @include mixin.desktop-view(1300px);
+}
+.header{
+    &_title{
+        font-family: variables.$Heading-font;
+        text-align: center;
+        width: 265px;
+        font-size: 1.48em;
+        margin: 0 auto 36px;
+        @include mixin.desktop-view(1010px, unset, 2.98em);
+    }
+    &_description{
+        text-align: center;
+        margin: 0 auto 49px;
+        font-weight: 600;
+        font-size: 0.9em;
+        width: 290px;
+        @include mixin.desktop-view(590px, 80px, 1.25em);
+    }
+    &_button{
+        @include mixin.button(variables.$Dark-Grey, unset, variables.$White, 200px, 40px, true);
+        @include mixin.desktop-view(300px, 60px, 1.25em);
+        @include mixin.button-hover(variables.$Grey);
+        margin-bottom: 100px;
+    }
+    &_screen-fondo{
+        width: 375px;
+        display: block;
+        margin: 0 auto 50px;
+        @include mixin.desktop-view(1300px);
+    }
+}
+.section-stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include mixin.section-stats-desktop;
+    .players{
+        @include mixin.stats();
+        @include mixin.stats-desktop;
+    }
+    .market{
+        @include mixin.stats();
+        @include mixin.stats-desktop;
+    }
+}
+.section-players{
+    @include mixin.flexSections;
+    @include mixin.flexSections-desktop;
+}
+.section-market{
+    @include mixin.flexSections;
+    @include mixin.flexSections-desktop;
+    margin-top: 70px;
+}
+.section-builder{
+    @include mixin.flexSections;
+    @include mixin.flexSections-desktop;
+    margin-top: 70px;
+}
+
+.your-team{
+    height: 170px;
+    margin-top: 75px;
+    &_title{
+    @extend .header_title;
+    }
+    &_button{
+    @extend .header_button;
+    }
+}
+
+.feedback{
+    background-color: variables.$Dark-Grey;
+    color: variables.$White;
+    padding: 70px 24px 40px;
+    margin-top: 75px;
+}
+@media (min-width: 1440px) {
+    .feedback {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+}
+
+.feedback-sub{
+    margin-bottom: 100px;
+    &_title{
+    font-family: variables.$Heading-font;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin-bottom: 28px;
+    }
+    &_description{
+        font-size: 0.95em;
+        margin-bottom: 28px;
+    }
+    &_input{
+        width: 100%;
+        height: 50px;
+        border-radius: 8px;
+        border: none;
+        margin-bottom: 16px;
+    }
+    &_submit-container{
+        display: flex;
+        justify-content: end;
+    }
+    &_submit{
+        @include mixin.button(variables.$Light-Grey, unset, variables.$White, 200px, 40px, true);
+        border-radius: 8px;
+        text-align: center;
+        margin: unset;
+        @include mixin.desktop-view(300px, 60px, 1.25em);
+        @include mixin.button-hover(variables.$Grey);
+    }
+}
+@media (min-width: 1440px){
+    .feedback-sub{
+    display: flex;
+    width: 580px;
+    height: 238px;
+    &_title{
+        font-size: 1.6em;
+        }
+    &_description{
+        font-size: 1.1em;
+        margin-bottom: 77px;
+        }
+    &_input{
+        width: 90%;
+    }
+    &_submit{
+        width: 160px;
+        height: 50px;
+        }
+    &_submit-container{
+        align-items: flex-end;
+    }
+    }
+}
+
+.feedback-contact{
+    &_logo {
+        width: 206px;
+        margin-bottom: 18px;
+    }
+    &_description{
+        font-size: 0,95em;
+        margin-bottom: 28px;
+    }
+    &_phone{
+        margin-bottom: 15px;
+    }
+    &_mail{
+        margin-bottom: 50px;
+    }
+    &_text{
+        text-decoration: none;
+        color: variables.$Very-Pale-Blue;
+        margin-left: 20px;
+    }
+    &_redes{
+        width: 110px;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media (min-width: 1440px){
+.feedback-contact{
+    &_logo{
+        width: 250px;
+    }
+    &_description{
+        font-size: 1.1em;
+        width: 370px;
+    }    
+}
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

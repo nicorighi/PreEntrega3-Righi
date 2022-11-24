@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+body {
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  color: hsl(192deg, 100%, 9%);
+}
+
+.main-container {
+  width: 375px;
+  margin: 0 auto 25px;
+}
+@media (min-width: 1440px) {
+  .main-container {
+    width: 1440px;
+    height: unset;
+    font-size: unset;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(43, 43, 43);
+  margin: 25px auto 100px;
+}
+@media (min-width: 1440px) {
+  .navbar {
+    width: 1300px;
+    height: unset;
+    font-size: unset;
+  }
+}
+.navbar_logo {
+  width: 150px;
+}
+@media (min-width: 1440px) {
+  .navbar_logo {
+    width: 300px;
+    height: unset;
+    font-size: unset;
+  }
+}
+.navbar_button {
+  background-color: #fff;
+  border: none;
+  border: 1px solid rgb(46, 46, 46);
+  border-radius: 50px;
+  display: block;
+  color: rgb(46, 46, 46);
+  width: 80px;
+  height: 35px;
+}
+@media (min-width: 1440px) {
+  .navbar_button {
+    width: 140px;
+    height: 50px;
+    font-size: unset;
+  }
+}
+.navbar_button:hover {
+  cursor: pointer;
+  background-color: rgb(53, 107, 100);
+  color: #fff;
+}
+
+.nav-menu {
+  justify-content: space-between;
+  text-align: center;
+  margin: 25px auto 100px;
+  margin-top: -100px;
+}
+@media (min-width: 1440px) {
+  .nav-menu {
+    width: 1300px;
+    height: unset;
+    font-size: unset;
+  }
+}
+
+.header_title, .your-team_title {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  width: 265px;
+  font-size: 1.48em;
+  margin: 0 auto 36px;
+}
+@media (min-width: 1440px) {
+  .header_title, .your-team_title {
+    width: 1010px;
+    height: unset;
+    font-size: 2.98em;
+  }
+}
+.header_description {
+  text-align: center;
+  margin: 0 auto 49px;
+  font-weight: 600;
+  font-size: 0.9em;
+  width: 290px;
+}
+@media (min-width: 1440px) {
+  .header_description {
+    width: 590px;
+    height: 80px;
+    font-size: 1.25em;
+  }
+}
+.header_button, .your-team_button {
+  background-color: rgb(46, 46, 46);
+  border: none;
+  border: 1px solid unset;
+  border-radius: 50px;
+  display: block;
+  color: #fff;
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+@media (min-width: 1440px) {
+  .header_button, .your-team_button {
+    width: 300px;
+    height: 60px;
+    font-size: 1.25em;
+  }
+}
+.header_button:hover, .your-team_button:hover {
+  cursor: pointer;
+  background-color: rgb(53, 107, 100);
+  color: #fff;
+}
+.header_screen-fondo {
+  width: 375px;
+  display: block;
+  margin: 0 auto 50px;
+}
+@media (min-width: 1440px) {
+  .header_screen-fondo {
+    width: 1300px;
+    height: unset;
+    font-size: unset;
+  }
+}
+
+.section-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1440px) {
+  .section-stats {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 500px;
+  }
+}
+.section-stats .players {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.section-stats .players_stats {
+  font-size: 4em;
+  margin: 0;
+}
+.section-stats .players_description {
+  font-size: 0.8em;
+  text-align: center;
+}
+@media (min-width: 1440px) {
+  .section-stats .players_stats {
+    font-size: 6em;
+    margin: 0;
+  }
+  .section-stats .players_description {
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+.section-stats .market {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.section-stats .market_stats {
+  font-size: 4em;
+  margin: 0;
+}
+.section-stats .market_description {
+  font-size: 0.8em;
+  text-align: center;
+}
+@media (min-width: 1440px) {
+  .section-stats .market_stats {
+    font-size: 6em;
+    margin: 0;
+  }
+  .section-stats .market_description {
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+
+.section-players {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-players .description_title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.section-players .description_content {
+  text-align: center;
+  font-size: 0.9em;
+  width: 375px;
+}
+@media (min-width: 1440px) {
+  .section-players {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 800px;
+  }
+  .section-players .description_title {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.3em;
+    text-align: left;
+    margin-bottom: 12px;
+  }
+  .section-players .description_content {
+    text-align: left;
+    font-size: 1em;
+    width: 495px;
+  }
+}
+
+.section-market {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+.section-market .description_title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.section-market .description_content {
+  text-align: center;
+  font-size: 0.9em;
+  width: 375px;
+}
+@media (min-width: 1440px) {
+  .section-market {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 800px;
+  }
+  .section-market .description_title {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.3em;
+    text-align: left;
+    margin-bottom: 12px;
+  }
+  .section-market .description_content {
+    text-align: left;
+    font-size: 1em;
+    width: 495px;
+  }
+}
+
+.section-builder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+.section-builder .description_title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.section-builder .description_content {
+  text-align: center;
+  font-size: 0.9em;
+  width: 375px;
+}
+@media (min-width: 1440px) {
+  .section-builder {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 800px;
+  }
+  .section-builder .description_title {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.3em;
+    text-align: left;
+    margin-bottom: 12px;
+  }
+  .section-builder .description_content {
+    text-align: left;
+    font-size: 1em;
+    width: 495px;
+  }
+}
+
+.your-team {
+  height: 170px;
+  margin-top: 75px;
+}
+.feedback {
+  background-color: rgb(46, 46, 46);
+  color: #fff;
+  padding: 70px 24px 40px;
+  margin-top: 75px;
+}
+
+@media (min-width: 1440px) {
+  .feedback {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+}
+.feedback-sub {
+  margin-bottom: 100px;
+}
+.feedback-sub_title {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin-bottom: 28px;
+}
+.feedback-sub_description {
+  font-size: 0.95em;
+  margin-bottom: 28px;
+}
+.feedback-sub_input {
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 16px;
+}
+.feedback-sub_submit-container {
+  display: flex;
+  justify-content: end;
+}
+.feedback-sub_submit {
+  background-color: rgb(138, 138, 138);
+  border: none;
+  border: 1px solid unset;
+  border-radius: 50px;
+  display: block;
+  color: #fff;
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 8px;
+  text-align: center;
+  margin: unset;
+}
+@media (min-width: 1440px) {
+  .feedback-sub_submit {
+    width: 300px;
+    height: 60px;
+    font-size: 1.25em;
+  }
+}
+.feedback-sub_submit:hover {
+  cursor: pointer;
+  background-color: rgb(53, 107, 100);
+  color: #fff;
+}
+
+@media (min-width: 1440px) {
+  .feedback-sub {
+    display: flex;
+    width: 580px;
+    height: 238px;
+  }
+  .feedback-sub_title {
+    font-size: 1.6em;
+  }
+  .feedback-sub_description {
+    font-size: 1.1em;
+    margin-bottom: 77px;
+  }
+  .feedback-sub_input {
+    width: 90%;
+  }
+  .feedback-sub_submit {
+    width: 160px;
+    height: 50px;
+  }
+  .feedback-sub_submit-container {
+    align-items: flex-end;
+  }
+}
+.feedback-contact_logo {
+  width: 206px;
+  margin-bottom: 18px;
+}
+.feedback-contact_description {
+  font-size: 0, 95em;
+  margin-bottom: 28px;
+}
+.feedback-contact_phone {
+  margin-bottom: 15px;
+}
+.feedback-contact_mail {
+  margin-bottom: 50px;
+}
+.feedback-contact_text {
+  text-decoration: none;
+  color: hsl(207deg, 100%, 98%);
+  margin-left: 20px;
+}
+.feedback-contact_redes {
+  width: 110px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 1440px) {
+  .feedback-contact_logo {
+    width: 250px;
+  }
+  .feedback-contact_description {
+    font-size: 1.1em;
+    width: 370px;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/*# sourceMappingURL=estilos.css.map */
